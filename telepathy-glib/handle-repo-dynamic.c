@@ -47,7 +47,6 @@
 
 #include <telepathy-glib/handle-repo-dynamic.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/dbus.h>
 #include <telepathy-glib/heap.h>

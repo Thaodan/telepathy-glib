@@ -9,7 +9,6 @@
 
 #include "config.h"
 
-#include <dbus/dbus-glib.h>
 
 /* We include -internal headers of context to be able to easily access to
  * their semi-private attributes (connection, account, channels, etc). */

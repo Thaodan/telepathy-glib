@@ -10,7 +10,6 @@
 
 #include "config.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/channel.h>

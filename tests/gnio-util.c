@@ -5,7 +5,6 @@
 #include <string.h>
 
 #include <glib.h>
-#include <dbus/dbus-glib.h>
 #include <gio/gio.h>
 
 #ifdef HAVE_GIO_UNIX

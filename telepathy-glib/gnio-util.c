@@ -56,7 +56,6 @@
 #include <errno.h>
 #endif
 
-#include <dbus/dbus-glib.h>
 
 #ifdef HAVE_GIO_UNIX
 #include <gio/gunixsocketaddress.h>

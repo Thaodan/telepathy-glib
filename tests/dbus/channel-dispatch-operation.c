@@ -19,7 +19,6 @@
 #include <telepathy-glib/telepathy-glib-dbus.h>
 
 #include <dbus/dbus.h>
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "tests/lib/simple-channel-dispatch-operation.h"

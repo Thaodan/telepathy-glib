@@ -36,7 +36,6 @@
 
 #include <telepathy-glib/run.h>
 
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 #include <stdlib.h>
 #include <string.h>

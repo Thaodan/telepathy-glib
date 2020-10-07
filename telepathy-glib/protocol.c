@@ -37,7 +37,6 @@
 #include <telepathy-glib/protocol.h>
 #include <telepathy-glib/protocol-internal.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/gtypes.h>

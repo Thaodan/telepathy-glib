@@ -21,7 +21,6 @@
 #include <telepathy-glib/svc-interface.h>
 #include <telepathy-glib/value-array.h>
 
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "tests/lib/contacts-conn.h"

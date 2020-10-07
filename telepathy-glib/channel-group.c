@@ -22,7 +22,6 @@
 
 #include "telepathy-glib/channel-internal.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/cli-channel.h>

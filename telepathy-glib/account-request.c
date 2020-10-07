@@ -22,7 +22,6 @@
 
 #include "telepathy-glib/account-request.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/cli-misc.h>

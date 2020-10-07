@@ -19,7 +19,6 @@
 
 #include "telepathy-glib/reentrants.h"
 
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "tests/lib/contacts-conn.h"

@@ -17,7 +17,6 @@
 #include <telepathy-glib/interfaces.h>
 #include <telepathy-glib/proxy-subclass.h>
 
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "examples/cm/contactlist/conn.h"

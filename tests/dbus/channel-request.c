@@ -20,7 +20,6 @@
 #include <telepathy-glib/svc-channel-request.h>
 
 #include <dbus/dbus.h>
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "tests/lib/contacts-conn.h"

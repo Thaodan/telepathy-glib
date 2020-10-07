@@ -62,7 +62,6 @@
 
 #include <telepathy-glib/message-mixin.h>
 
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 #include <string.h>
 

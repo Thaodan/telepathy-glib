@@ -24,7 +24,6 @@
 #include <telepathy-glib/cli-call.h>
 #include <telepathy-glib/cli-misc.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/cli-proxy.h>
 #include <telepathy-glib/interfaces.h>

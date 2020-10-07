@@ -2,7 +2,6 @@
 
 #include <glib-object.h>
 #include <dbus/dbus.h>
-#include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include <telepathy-glib/asv.h>

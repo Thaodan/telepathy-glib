@@ -23,7 +23,6 @@
 
 #include "cm.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/telepathy-glib.h>
 

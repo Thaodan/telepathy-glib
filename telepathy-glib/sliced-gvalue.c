@@ -32,7 +32,6 @@
 
 #include <telepathy-glib/sliced-gvalue.h>
 
-#include <dbus/dbus-glib.h>
 
 /**
  * tp_g_value_slice_new: (skip)

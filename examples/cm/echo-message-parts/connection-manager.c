@@ -11,7 +11,6 @@
 #include "connection-manager.h"
 
 #include <dbus/dbus-protocol.h>
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/telepathy-glib.h>
 

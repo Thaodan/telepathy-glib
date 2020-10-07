@@ -25,7 +25,6 @@
 #define DEBUG_FLAG TP_DEBUG_MISC
 #include "debug-internal.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/interfaces.h>

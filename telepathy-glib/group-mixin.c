@@ -60,7 +60,6 @@
 
 #include <telepathy-glib/group-mixin.h>
 
-#include <dbus/dbus-glib.h>
 #include <stdio.h>
 #include <string.h>
 

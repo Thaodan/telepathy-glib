@@ -35,7 +35,6 @@
 #include <string.h>
 
 #include <dbus/dbus.h>
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/errors.h>
 #include <telepathy-glib/gtypes.h>

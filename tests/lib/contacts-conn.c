@@ -13,7 +13,6 @@
 
 #include "contacts-conn.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/telepathy-glib.h>
 #include <telepathy-glib/telepathy-glib-dbus.h>

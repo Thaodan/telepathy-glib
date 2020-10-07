@@ -25,7 +25,6 @@
 
 #include <glib/gstdio.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/client-factory-internal.h>

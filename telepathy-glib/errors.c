@@ -23,7 +23,6 @@
 #include <telepathy-glib/errors.h>
 
 #include <glib.h>
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/util.h>
 

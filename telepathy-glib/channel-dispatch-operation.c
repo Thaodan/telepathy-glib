@@ -23,7 +23,6 @@
 
 #include "telepathy-glib/channel-dispatch-operation.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/base-client-internal.h>

@@ -25,7 +25,6 @@
 
 #include <string.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/cli-misc.h>

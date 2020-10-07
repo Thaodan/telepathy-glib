@@ -147,7 +147,6 @@
 
 #include <telepathy-glib/presence-mixin.h>
 
-#include <dbus/dbus-glib.h>
 #include <string.h>
 
 #include <telepathy-glib/base-connection.h>

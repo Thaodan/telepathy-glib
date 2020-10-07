@@ -9,7 +9,6 @@
 
 #include "config.h"
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/asv.h>
 #include <telepathy-glib/simple-approver.h>

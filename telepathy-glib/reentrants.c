@@ -3,7 +3,6 @@
 #include "telepathy-glib/interfaces.h"
 #include "telepathy-glib/reentrants.h"
 
-#include <dbus/dbus-glib.h>
 #include <telepathy-glib/value-array.h>
 
 #include <telepathy-glib/cli-proxy.h>
