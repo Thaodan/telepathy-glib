@@ -27,7 +27,6 @@
 #include <glib.h>
 #include <gobject/gvaluecollector.h>
 
-#include <dbus/dbus-glib.h>
 
 #include <telepathy-glib/gtypes.h>
 #include <telepathy-glib/sliced-gvalue.h>
@@ -86,8 +85,9 @@ tp_asv_to_vardict (const GHashTable *asv)
   g_value_init (&v, TP_HASH_TYPE_STRING_VARIANT_MAP);
   g_value_set_boxed (&v, asv);
 
-  ret = dbus_g_value_build_g_variant (&v);
-  g_return_val_if_fail (g_variant_is_of_type (ret, G_VARIANT_TYPE_VARDICT),
+  g_value_set_variant()
+
+  g_return_val_if_fail (g_variant_is_of_type (ret , G_VARIANT_TYPE_VARDICT),
       NULL);
 
   g_value_unset (&v);
@@ -315,7 +315,7 @@ tp_asv_get_bytes (const GHashTable *asv,
 
   value = g_hash_table_lookup ((GHashTable *) asv, key);
 
-  if (value == NULL || !G_VALUE_HOLDS (value, DBUS_TYPE_G_UCHAR_ARRAY))
+  if (value == NULL || !G_VALUE_HOLDS (value, G_VARIANT_TYPE_BYTESTRING))
     return NULL;
 
   return g_value_get_boxed (value);
@@ -1049,7 +1049,7 @@ tp_asv_get_object_path (const GHashTable *asv,
 
   value = g_hash_table_lookup ((GHashTable *) asv, key);
 
-  if (value == NULL || !G_VALUE_HOLDS (value, DBUS_TYPE_G_OBJECT_PATH))
+  if (value == NULL || !G_VALUE_HOLDS (value, G_VARIANT_TYPE_OBJECT_PATH))
     return NULL;
 
   return g_value_get_boxed (value);
