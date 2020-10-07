@@ -69,9 +69,9 @@ def type_to_gtype(s):
     elif s == 's': #string
         return ("gchar *", "G_TYPE_STRING", "STRING", True)
     elif s == 'g': #signature - FIXME
-        return ("gchar *", "DBUS_TYPE_G_SIGNATURE", "STRING", True)
+        return ("gchar *", "G_VARIANT_TYPE_SIGNATURE", "STRING", True)
     elif s == 'o': #object path
-        return ("gchar *", "DBUS_TYPE_G_OBJECT_PATH", "BOXED", True)
+        return ("gchar *", "G_VARIANT_TYPE_OBJECT_PATH", "BOXED", True)
     elif s == 'v':  #variant
         return ("GValue *", "G_TYPE_VALUE", "BOXED", True)
     elif s == 'as':  #array of strings
@@ -81,24 +81,24 @@ def type_to_gtype(s):
             "dbus_g_type_get_collection (\"GArray\", G_TYPE_UCHAR)", "BOXED",
             True)
     elif s == 'au': #uint array
-        return ("GArray *", "DBUS_TYPE_G_UINT_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"au\")", "BOXED", True)
     elif s == 'ai': #int array
-        return ("GArray *", "DBUS_TYPE_G_INT_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"ai\")", "BOXED", True)
     elif s == 'ax': #int64 array
-        return ("GArray *", "DBUS_TYPE_G_INT64_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"ax\")", "BOXED", True)
     elif s == 'at': #uint64 array
-        return ("GArray *", "DBUS_TYPE_G_UINT64_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"at\")", "BOXED", True)
     elif s == 'ad': #double array
-        return ("GArray *", "DBUS_TYPE_G_DOUBLE_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"ad\")", "BOXED", True)
     elif s == 'ab': #boolean array
-        return ("GArray *", "DBUS_TYPE_G_BOOLEAN_ARRAY", "BOXED", True)
+        return ("GArray *", "G_VARIANT_TYPE (\"ab\")", "BOXED", True)
     elif s == 'ao': #object path array
         return ("GPtrArray *",
                 'dbus_g_type_get_collection ("GPtrArray",'
-                ' DBUS_TYPE_G_OBJECT_PATH)',
+                ' G_VARIANT_TYPE_OBJECT_PATH)',
                 "BOXED", True)
     elif s == 'a{ss}': #hash table of string to string
-        return ("GHashTable *", "DBUS_TYPE_G_STRING_STRING_HASHTABLE", "BOXED", False)
+        return ("GHashTable *", "G_VARIANT_TYPE (\"a{ss}\")", "BOXED", False)
     elif s[:2] == 'a{':  #some arbitrary hash tables
         if s[2] not in ('y', 'b', 'n', 'q', 'i', 'u', 's', 'o', 'g'):
             raise Exception("can't index a hashtable off non-basic type " + s)
